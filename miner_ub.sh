@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-NUM_CORE='nproc'
+NUM_CORE=$(nproc)
 echo "starting aquaminer" | logger
 for i in $(seq 1 "$NUM_CORE"); do
   echo launching worker $i
